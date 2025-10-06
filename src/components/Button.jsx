@@ -1,7 +1,7 @@
 export function Button(props) {
   return (
     <button
-      className="bg-slate-400 p-2 rounded-md text-white cursor-pointer"
+      className="bg-[#7776A6] hover:bg-[#2F2B8C] p-2 rounded-md text-[#F2F2F2] cursor-pointer"
       {...props}
     >
       {props.children}
