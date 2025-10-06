@@ -1,5 +1,8 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Title } from './components/Title';
+import { Tasks } from './components/Tasks';
+import { v4 } from 'uuid';
+import { AddTask } from './components/AddTask';
 
 function App() {
   const [task, setTask] = useState(
