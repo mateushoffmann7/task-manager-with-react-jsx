@@ -21,7 +21,7 @@ export function AddTask({ onAddTaskSubmit }) {
       <button
         className="bg-[#7776A6] hover:bg-[#2F2B8C] text-white px-4 py-2 rounded-md font-medium cursor-pointer"
         onClick={() => {
-          if (!title.trim() && !description.trim()) {
+          if (!title.trim() || !description.trim()) {
             return alert('Preencha o título e a descrição da tarefa!');
           } else {
             onAddTaskSubmit(title, description);
