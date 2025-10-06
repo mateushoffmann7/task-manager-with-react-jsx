@@ -1,16 +1,59 @@
-# React + Vite
+# 📝 Gerenciador de Tarefas (Task Manager)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um aplicativo simples e funcional de **gerenciamento de tarefas (CRUD)** desenvolvido com **React**, **Vite** e **Tailwind CSS**.  
+O projeto permite **criar**, **listar**, **atualizar (marcar como concluída)** e **deletar** tarefas, com **armazenamento local (localStorage)** para persistência dos dados.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias Utilizadas
 
-## React Compiler
+- ⚛️ **React** – biblioteca principal para a construção da interface.
+- ⚡ **Vite** – ferramenta de build ultrarrápida.
+- 🎨 **Tailwind CSS** – estilização moderna e responsiva.
+- 🧠 **React Hooks**
+  - `useState` para gerenciar estados internos.
+  - `useEffect` para sincronizar dados com o `localStorage`.
+- 🔄 **React Router** – navegação entre páginas (quando aplicável).
+- 📦 **UUID** – geração de IDs únicas para as tarefas.
+- 💾 **LocalStorage** – persistência das tarefas no navegador.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧩 Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ Adicionar nova tarefa (com título e descrição)  
+✅ Listar todas as tarefas  
+✅ Marcar tarefa como concluída/não concluída  
+✅ Excluir tarefas individualmente  
+✅ Salvar automaticamente no navegador (mesmo após recarregar a página)
+
+---
+
+## 🖼️ Demonstração
+
+### Tela principal
+<img width="756" height="607" alt="image" src="https://github.com/user-attachments/assets/a0e32cbe-ed52-4f52-9ce7-bf49c8c41ae5" />
+
+
+A interface é intuitiva e responsiva, permitindo o gerenciamento rápido das suas tarefas diárias.
+
+---
+
+## 🧠 Conceitos Aplicados
+
+- **Componentização:**  
+  Separação do código em componentes reutilizáveis (`Title`, `Tasks`, `AddTask`, etc).
+
+- **Hooks:**  
+  Utilização de `useState` e `useEffect` para controle de estado e sincronização com o `localStorage`.
+
+- **Props:**  
+  Passagem de funções e dados entre componentes para manter o código limpo e organizado.
+
+- **Gerenciamento de estado local:**  
+  Cada ação (adicionar, deletar, marcar como concluída) atualiza o estado do React e reflete automaticamente na UI.
+
+---
+
+## ⚙️ Como Executar o Projeto
+Acesse meu deploy: https://task-manager-with-react-jsx.vercel.app/
