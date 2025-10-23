@@ -16,7 +16,7 @@ export function TaskPage() {
         <div className="flex justify-center relative mb-6">
           <button
             onClick={() => navigate(-1)}
-            className="cursor-pointer absolute left-0 top-0 bottom-0 text-[#F2F2F2]"
+            className="cursor-pointer absolute left-0 top-0 bottom-0 text-gray-200"
           >
             <ChevronLeftIcon />
           </button>
